@@ -22,7 +22,7 @@ Example E-commerce HTML Email Template
 
 Responsive email template for e-commerce. Promote your restaurant's meal deals. Social media icons for networking.
 
-<img src="https://i.ibb.co/mhJ106M/viewport.png" alt="viewport" border="0">
+<img src="https://i.ibb.co/D7wpGQk/viewport.png" alt="viewport" border="0">
 
 Here is a working live demonstration: https://mrblach.github.io/email-template-restaurant-promo/
 

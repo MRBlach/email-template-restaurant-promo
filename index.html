@@ -5,138 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Example HTML Email Template</title>
   <style type="text/css">
-    body {
-      max-width: 960px;
-      margin: auto;
-      padding: 0;
-      background-color: #f6f9fc;
-    }
-    table {
-      border-spacing: 0;
-    }
-    td {
-      padding: 0;
-    }
-    img {
-      border: 0;
-    }
-    .wrapper {
-      width: 100%;
-      table-layout: fixed;
-      background-color: #f6f9fc;
-      padding-bottom: 40px;
-      padding-top: 40px;
-    }
-    .webkit {
-      max-width: 700px;
-      background-color: #fff;
-    }
-    .outer {
-      Margin: auto;
-      width: 100%;
-      max-width: 700px;
-      border-spacing: 0;
-      font-family: sans-serif;
-      color: #4a4a4a;
-    }
-    
-  
-    .padding {
-      padding: 15px;
-      margin: auto;
-    }
-  
-    a {
-      text-decoration: none;
-      color: #388cda;
-      font-size: 16px;
-    }
-    .border {
-      background-image: url('https://i.ibb.co/Y0NZV28/food-border.webp'); background-repeat: no-repeat; 
-      background-size: cover; 
-      height: 280px;
-    }
-    .border-text {
-      padding-top: 50px; 
-      margin-bottom: 0; 
-      text-align: center; 
-      font-size: 55px; 
-      font-weight: bolder; 
-      font-style: oblique; 
-      color: #297435; 
-      text-shadow: 2px 2px red;
-    }
-    .taco {
-      background-image: url('https://i.ibb.co/k0Jst9m/taco.jpg');
-      background-repeat: no-repeat;
-      max-width: 100%;
-      background-size: contain;
-      text-align: center;
-    }
-    .add-on {
-      padding: 0 170px;
-    }
-    .online {
-      width: 100%;
-    }
-    .location {
-      padding-right: 75px;
-    }
+  .add-on {
+    padding: 0 170px;
+  }
+  .online,
+  .location {
+    width: 100%;
+  }
+  .border-text {
+    padding-top: 50px;
+    font-size: 55px;
+  }
+@media screen and (max-width: 700px) {
+  .border {
+    height: 100px;
+  }
 
-    @media screen and (max-width: 700px) {
-      .border {
-        height: 100px;
-      }
-      .border-text {
-        font-size: 45px;
-        padding-top: 0;
-      }
-      .taco {
-        height: 250px;
-      }
-      .add-on {
-        padding: 0 100px;
-      }
-      .location {
-        padding-right: 50px;
-      }
-    }
-    @media screen and (max-width: 400px) {
-      .border {
-        height: 100px;
-      }
-      .border-text {
-        font-size: 35px;
-        padding-top: 20px;
-      }
-      .taco {
-        height: 200px;
-      }
-      .add-on {
-        padding: 0 10px;
-      }
-      .location {
-        padding-right: 30px;
-      }
-      .online {
-        width: 500%;
-      }
-    }
-  </style>
+  .border-text {
+    font-size: 45px;
+    padding-top: 0;
+  }
+
+  .taco {
+    height: 250px;
+  }
+
+  .add-on {
+    padding: 0 100px;
+  }
+
+  .location {
+    padding-right: 50px;
+  }
+  .online {
+    width: 200%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .border {
+    height: 100px;
+  }
+
+  .border-text {
+    font-size: 45px;
+    padding-top: 20px;
+  }
+
+  .taco {
+    height: 200px;
+  }
+
+  .add-on {
+    padding: 0 10px;
+  }
+
+  .location {
+    padding-right: 30px;
+  }
+
+  .online {
+    width: 300%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .online {
+    width: 600%;
+  }
+}
+</style>
 </head>
-<body>
+<body style="max-width: 960px; margin: auto; padding: 0; background-color: #f6f9fc;">
   
-  <center class="wrapper">
-    <div class="webkit">
+  <center class="wrapper" style="width: 100%; table-layout: fixed; background-color: #f6f9fc; padding-bottom: 40px; padding-top: 40px;">
+    <div class="webkit" style="max-width: 700px; background-color: #fff;">
 
-      <table class="outer" align="center">
+      <table class="outer" align="center" style="Margin: auto; width: 100%; max-width: 700px; border-spacing: 0; font-family: sans-serif; color: #4a4a4a;" width="100%">
 
         <tr>
-          <td>
-            <table width="100%">
+          <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;">
               <tr>
-                <td class="border">
-                  <p class="border-text">PEPPER'S <br>TAQUERIA</p>
+                <td class="border" style="padding: 0; background-image: url('https://i.ibb.co/xHWSdNV/food-border.png'); background-repeat: no-repeat; background-size: cover;" background="url('https://i.ibb.co/xHWSdNV/food-border.png')">
+                  <p class="border-text" style="margin-bottom: 0; text-align: center; font-weight: bolder; font-style: oblique; color: #297435; text-shadow: 2px 2px red;">PEPPER'S <br>TAQUERIA</p>
                 </td>
               </tr>
             </table>
@@ -144,29 +94,29 @@
         </tr>
 
         <tr>      
-          <td width= "700"; height= "350"; class="taco">                       
+          <td width="700" ;="" height="350" class="taco" style="padding: 0; background-image: url('https://i.ibb.co/k0Jst9m/taco.jpg'); background-repeat: no-repeat; max-width: 100%; background-size: contain; text-align: center;" background="url('https://i.ibb.co/k0Jst9m/taco.jpg')" align="center">                       
           </td>
         </tr>
 
         <tr>
-          <td>
-            <table width="100%" style="text-align: center;">
+          <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0; text-align: center;" align="center">
               <tr>
-                <td>
+                <td style="padding: 0;">
 
-                  <table class="column"  style="text-align: center;">
+                  <table class="column" style="border-spacing: 0; text-align: center;" align="center">
                     <tr>
-                      <td class="padding">
+                      <td class="padding" style="padding: 15px; margin: auto;">
 
-                        <table class="content">
+                        <table class="content" style="border-spacing: 0;">
                           <tr>
                             <td style="border-style: dotted double; font-size: 25px; display: inline-block; border-color: rgb(180, 157, 27); padding: 0 10%; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom: none;">
                              <p style="margin-bottom: 5%;">GET<br><span style="color: rgb(192, 6, 6); font-weight: bolder; font-size: 45px;">FREE*</span><br> TORTILLA CHIPS</p>
                             </td>
                           </tr>
                           <tr>
-                            <td style="border-top: double; border-bottom: double; border-color: rgb(180, 157, 27); text-align: center;">
-                              <p class="add-on" style="font-size: 25px;font-weight: bold; color: rgb(180, 157, 27); margin-top: 5px; margin-bottom: 5px; font-style: oblique;">WHEN YOU ADD A SIDE OF <br> GUAC TO YOUR ORDER</p>
+                            <td style="padding: 0; border-top: double; border-bottom: double; border-color: rgb(180, 157, 27); text-align: center;" align="center">
+                              <p class="add-on" style="font-size: 25px; font-weight: bold; color: rgb(180, 157, 27); margin-top: 5px; margin-bottom: 5px; font-style: oblique;">WHEN YOU ADD A SIDE OF <br> GUAC TO YOUR ORDER</p>
                              
                             </td>
                           </tr>
@@ -176,40 +126,40 @@
                     </tr>
                   </table>
 
-                  <table class="column">
+                  <table class="column" style="border-spacing: 0;">
                     <tr>
-                      <td class="padding">
+                      <td class="padding" style="padding: 15px; margin: auto;">
 
-                        <table class="content">
+                        <table class="content" style="border-spacing: 0;">
                           <tr>
-                            <td>
+                            <td style="padding: 0;">
                               <p style="font-size: 85px; padding: 0%; margin: 0%; font-weight: bolder;">NEW RECIPE</p>
                               <p style="line-height: 1.5;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatibus sequi ipsum. Voluptates, ducimus nostrum, eveniet facere aspernatur temporibus facilis, nihil soluta numquam quas cumque.</p>
-                              <a href="#"><button width="100%" style="margin:0%; color:seashell; background-color: rgb(192, 6, 6); border-style: none; border-radius: 5%; padding: 2% 28%; font-size: 35px; font-weight: bolder;letter-spacing: 5px;">ORDER NOW</button></a>
+                              <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><button width="100%" style="margin:0%; color:seashell; background-color: rgb(192, 6, 6); border-style: none; border-radius: 5%; padding: 2% 28%; font-size: 35px; font-weight: bolder;letter-spacing: 5px;">ORDER NOW</button></a>
                               <p style="font-weight: bold; font-style: italic; margin-top: 0%;">*Must purchase an entree with side of guac to qualify.</p>
                             </td>
                           </tr>
                         </table>
                         
-                          <table  style="border: 5px solid rgb(143, 164, 224);">
+                          <table style="border-spacing: 0; border: 5px solid rgb(143, 164, 224);">
                           <tr>
                             
-                            <td><img src="https://i.ibb.co/JCK6p8X/online.webp" alt="" class="online" style="border-radius: 50%;padding-left: 10px;"></td>
-                            <td style="padding: 10px 70px; text-align: left;">
+                            <td style="padding: 0;"><img src="https://i.ibb.co/JCK6p8X/online.webp" alt="" class="online" style="border: 0; border-radius: 50%; padding-left: 10px;"></td>
+                            <td style="padding: 10px 70px; text-align: left;" align="left">
 
                               <p style="font-size: 25px; font-weight: bold; color: rgb(143, 164, 224); padding-left: 10px;">OUR SAFETY PRACTICES</p>
                               <p style="color: rgb(143, 164, 224); padding-left: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit repellendus, neque aut autem possimus dolores delectus minima deleniti molestiae veritatis ipsum suscipit doloremque iure ab!</p>
-                              <a href="#" style=" padding-left: 10px;"><button width="100%" style="margin:0%; color:seashell; background-color: royalblue; border-style: none; border-radius: 5%; padding: 2%; font-size: 15px; font-weight: bolder;letter-spacing: 5px;">LEARN MORE</button></a>
+                              <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px; padding-left: 10px;"><button width="100%" style="margin:0%; color:seashell; background-color: royalblue; border-style: none; border-radius: 5%; padding: 2%; font-size: 15px; font-weight: bolder;letter-spacing: 5px;">LEARN MORE</button></a>
                             </td>
                           </tr>
                         </table>
 
-                        <table  style="border: 5px solid rgb(143, 164, 224); background-color: rgb(143, 164, 224); padding: 15px;">
+                        <table style="border-spacing: 0; border: 5px solid rgb(143, 164, 224); background-color: rgb(143, 164, 224); padding: 15px;" bgcolor="rgb(143, 164, 224)">
                           <tr>
-                            <td width="50%"><img src="https://i.ibb.co/rd4nD5C/location2.webp" alt="" width="45%" style="border-radius: 50%;"></td>
-                            <td>
-                              <a href="#"><p class="location" style="font-size: 25px; font-weight: bold; color:white;">FIND A LOCATION ></p></a>
+                            <td style="padding: 0;">
+                              <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><p class="location" style="font-size: 25px; font-weight: bold; color: white;">FIND A LOCATION ></p></a>
                             </td>
+                              <td width="50%" style="padding: 0;"><img src="https://i.ibb.co/rd4nD5C/location2.webp" alt="" class="locationImg" style="border: 0; border-radius: 50%; width: 30%;"></td>
                           </tr>
                         </table>
 
@@ -218,27 +168,27 @@
                  
 
         
-            <table width="100%">
+            <table width="100%" style="border-spacing: 0;">
               <tr>
-                <td style="border-top: 5px solid white;background-color: rgb(143, 164, 224);padding:15px;text-align:center;">
+                <td style="border-top: 5px solid white; background-color: rgb(143, 164, 224); padding: 15px; text-align: center;" bgcolor="rgb(143, 164, 224)" align="center">
                 
                 <p style="font-size: 18px;color: #fff;margin-bottom: 13px;">Connect with us</p>
-                  <a href="#"><img src="https://i.ibb.co/WyzJRyz/white-facebook.png" alt="white-facebook" width="30"></a>
-                  <a href="#"><img src="https://i.ibb.co/1Gyzg8V/white-twitter.png" alt="white-twitter" width="30"></a>
-                  <a href="#"><img src="https://i.ibb.co/DRTYfB3/white-youtube.png" alt="youtube" width="30"></a>
-                  <a href="#"><img src="https://i.ibb.co/9GGCbGj/white-linkedin.png" alt="white-linkedin" width="30"></a>
-                  <a href="#"><img src="https://i.ibb.co/YT883kC/white-instagram.png" alt="white-instagram" width="30"></a>
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><img src="https://i.ibb.co/WyzJRyz/white-facebook.png" alt="white-facebook" width="30" style="border: 0;"></a>
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><img src="https://i.ibb.co/1Gyzg8V/white-twitter.png" alt="white-twitter" width="30" style="border: 0;"></a>
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><img src="https://i.ibb.co/DRTYfB3/white-youtube.png" alt="youtube" width="30" style="border: 0;"></a>
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><img src="https://i.ibb.co/9GGCbGj/white-linkedin.png" alt="white-linkedin" width="30" style="border: 0;"></a>
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><img src="https://i.ibb.co/YT883kC/white-instagram.png" alt="white-instagram" width="30" style="border: 0;"></a>
                 </td>
            
-                <td style="padding:10px;text-align:center; color: white; background-color: rgb(143, 164, 224);border-top: 5px solid white; border-left: 5px solid white;">
-                  <a href="https://imgbb.com/"><p style="color: royalblue; font-weight: bolder;">PEPPER'S TAQUERIA</p></a>
+                <td style="padding: 10px; text-align: center; color: white; background-color: rgb(143, 164, 224); border-top: 5px solid white; border-left: 5px solid white;" align="center" bgcolor="rgb(143, 164, 224)">
+                  <a href="https://imgbb.com/" style="text-decoration: none; color: #388cda; font-size: 16px;"><p style="color: royalblue; font-weight: bolder;">PEPPER'S TAQUERIA</p></a>
                   <p>HTML Email</p>
                   <p>123 Street Road, City, State 55555</p>
-                  <a href="#"><p style="color: royalblue; font-weight: bolder;">email@example.com</p></a>
-                  <a href="">
+                  <a href="#" style="text-decoration: none; color: #388cda; font-size: 16px;"><p style="color: royalblue; font-weight: bolder;">email@example.com</p></a>
+                  <a href="" style="text-decoration: none; color: #388cda; font-size: 16px;">
                     <p style="color: royalblue; font-weight: bolder;">1-800-888-8888</p>
                   </a><br>
-                  <a href="">
+                  <a href="" style="text-decoration: none; color: #388cda; font-size: 16px;">
                     <p style="color: royalblue; font-weight: bolder;">UNSUBSCRIBE</p>
                   </a>
                 </td>
@@ -250,7 +200,7 @@
 
       </table>
 
-    </div>
+    </td></tr></table></td></tr></table></div>
   </center>
   
 </body>

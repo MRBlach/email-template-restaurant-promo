@@ -84,4 +84,4 @@ Whether you use this project, have learned something from it, or just like it, p
 
 ### You may also like..
 
-+ [HTML Email Template: sign-up confirmation](https://github.com/MRBlach/email-template-sign-up-confirmation "example confirmation email") - template for confirmation email.
++ [HTML Email Template: success confirmation](https://github.com/MRBlach/email-template-success "example confirmation email") - template for confirmation email.
